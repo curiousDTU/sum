@@ -5,9 +5,9 @@ int x,b,c=0;
 char g,k;
 printf("you want to use calculator y/n\n");
 scanf("%s",&g);
-while(g==121)
+while(g=='y')
 {
- if(g==121)
+ if(g=='y')
  {
   printf("which function you want to use\n");
   printf("for addition press a\n");
@@ -15,7 +15,7 @@ while(g==121)
   printf("for multiplication press m\n");
   printf("for division press d\n");
   scanf("%s",&k);
-  if(k==97)
+  if(k=='a')
   {
     printf("Enter two values a and b\n");
     scanf("%d",&x);
@@ -23,7 +23,7 @@ while(g==121)
     c=x+b;
     printf("%d",c);
   }
-  else if(k==115)
+  else if(k=='s')
   {
     printf("Enter two values a and b\n");
     scanf("%d",&x);
@@ -31,7 +31,7 @@ while(g==121)
     c=x-b;
     printf("%d",c);
   }
-  else if(k==109)
+  else if(k=='m')
   {
     printf("Enter two values a and b\n");
     scanf("%d",&x);
@@ -39,7 +39,7 @@ while(g==121)
     c=x*b;
     printf("%d",c);
   }
-  else if(k==100)
+  else if(k=='d')
   {
     printf("Enter two values a and b\n");
     scanf("%d",&x);
@@ -48,7 +48,7 @@ while(g==121)
     printf("%d",c);
   }
 }
- else if(g==110)
+ else if(g=='n')
  {
   break;
 }
